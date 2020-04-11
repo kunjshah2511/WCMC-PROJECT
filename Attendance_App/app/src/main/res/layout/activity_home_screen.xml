@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeScreen">
+
+    <RelativeLayout
+        android:id="@+id/toptitle"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/tvdate"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center|center_horizontal"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Dashboard"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"></TextView>
+
+        <TextView
+            android:id="@+id/tvlogout"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Logout"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"></TextView>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/centerblank"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@id/toptitle" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/centerblank"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/edmobile"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@android:color/white"
+            android:ems="10"
+            android:enabled="true"
+            android:gravity="center"
+            android:inputType="number"
+            android:textColorHint="@android:color/darker_gray"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/centerblank4"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_below="@id/toptitle" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="Factory Attendance"
+            android:textSize="18sp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            app:cardCornerRadius="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="30dp"
+                android:paddingRight="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_home_factory_clockin"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|center_horizontal"
+                        android:background="@color/colorPrimary"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Clock-in"
+                        android:textColor="@android:color/white"
+                        android:textSize="25sp"></TextView>
+
+                    <TextView
+                        android:id="@+id/tv_home_factory_clockin_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="You are clocked in at 08:00"
+                        android:textColor="#454647"
+                        android:textSize="13sp"
+                        android:visibility="gone"></TextView>
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <View
+            android:id="@+id/centerblank2"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_below="@id/toptitle" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="Site Attendance"
+            android:textSize="18sp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="30dp"
+                android:paddingRight="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_home_site_clockin"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|center_horizontal"
+                        android:background="@color/colorPrimary"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Clock-in"
+                        android:textColor="@android:color/white"
+                        android:textSize="25sp"></TextView>
+
+                    <TextView
+                        android:id="@+id/tv_home_site_clockin_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="You are clocked out at 16:00"
+                        android:textColor="#454647"
+                        android:textSize="13sp"
+                        android:visibility="gone"></TextView>
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/centerblank3"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/toptitle"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_home_site_clockout"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|center_horizontal"
+                        android:background="@color/colorPrimary"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Clock-out"
+                        android:textColor="@android:color/white"
+                        android:textSize="25sp"></TextView>
+
+                    <TextView
+                        android:id="@+id/tv_home_site_clockout_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="You are clocked in at 12:00"
+                        android:textColor="#454647"
+                        android:textSize="13sp"
+                        android:visibility="gone"></TextView>
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</RelativeLayout>
